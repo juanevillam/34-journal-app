@@ -1,3 +1,3 @@
 # JournalApp
 
-Una aplicación para llevar mi diario hecha con React y Redux.
+This is my own version of google keep, the live code will be here soon!
