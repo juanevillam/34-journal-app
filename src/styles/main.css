@@ -1,0 +1,392 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('./fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('./fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+    background-color: #100f10;
+    height: 100%;
+      font-family: Poppins-Regular, sans-serif;
+  }
+  /*---------------------------------------------*/
+  
+  .auth__socialNetworks {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  /*---------------------------------------------*/
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0px;
+  }
+  
+  p {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+  }
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  /*---------------------------------------------*/
+  input {
+      outline: none;
+    border: none;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+  textarea:focus, input:focus {
+    border-color: transparent !important;
+  }
+  
+  input::-webkit-input-placeholder { color: #8f8fa1;}
+  input:-moz-placeholder { color: #8f8fa1;}
+  input::-moz-placeholder { color: #8f8fa1;}
+  input:-ms-input-placeholder { color: #8f8fa1;}
+  
+  textarea::-webkit-input-placeholder { color: #8f8fa1;}
+  textarea:-moz-placeholder { color: #8f8fa1;}
+  textarea::-moz-placeholder { color: #8f8fa1;}
+  textarea:-ms-input-placeholder { color: #8f8fa1;}
+  
+  label {
+    display: block;
+    margin: 0;
+  }
+  
+  /*---------------------------------------------*/
+  button {
+      outline: none !important;
+      border: none;
+      background: transparent;
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }
+  
+  iframe {
+      border: none !important;
+  }
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ Utility ]*/
+  .txt1 {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #6A26CD;
+    line-height: 1.4;
+  }
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ LOGIN ]*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .formGroup__TextBoxIconRight {
+    
+  }
+  
+  .coolButton {
+    background: linear-gradient(45deg, #499be7,  #f506ff );
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-size: 0.875rem;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 1.75rem;
+    padding: 0 2rem;
+    width: 100%;
+  }
+  
+  .iconListTitle {
+    color: #a7a7a7;
+    font-size: 0.875rem;
+    margin-top: 1.8rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ LOGIN ]*/
+  
+  
+  /*==================================================================
+  [ Form ]*/
+  
+  
+  
+  
+  
+  
+  
+  /*------------------------------------------------------------------
+  [ Input ]*/
+  
+  
+  
+  .inputBoxWrapper {
+    width: 100%;
+    position: relative;
+  }
+  
+  .inputTextBox {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #c7c7c7;
+    color: #606060;
+    text-indent: 2rem;
+    line-height: 1.2;
+    font-size: 18px;
+  
+    display: block;
+    background: transparent;
+    height: 50px;
+    padding: 0 20px 0 38px;
+  }
+  
+  
+  .inputTextBoxIcon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY( -50% );
+    font-size: 20px;
+  }
+  
+  .inputLabel {
+    font-size: 0.75rem;
+    color: #a7a7a7;
+  }
+  
+  
+  
+  /*------------------------------------------------------------------
+  [ Focus Input ]*/
+  
+  
+  .eff-focus-selection {
+    visibility: visible;
+    opacity: 1;
+  
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  /*==================================================================
+  [ Restyle Checkbox ]*/
+  
+  .input-checkbox100 {
+    display: none;
+  }
+  
+  .label-checkbox100 {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #999999;
+    line-height: 1.2;
+  
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+  }
+  
+  .label-checkbox100::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 13px;
+    color: transparent;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background: #fff;
+    border: 2px solid #827ffe;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .input-checkbox100:checked + .label-checkbox100::before {
+    color: #827ffe;
+  }
+  
+  .container-loginError-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container-loginError-form-btn {
+    justify-content: center;
+    font-family: Poppins-Bold;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 62px;
+    background-color: #ff6d6dfd;
+    border-radius: 10px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .container-loginError-form-btn:hover {
+    background-color: #923434fd;
+  }
+  
+  
+  /*------------------------------------------------------------------
+  [ Button ]*/
+  
+  
+  
+  
+  .coolButton:hover {
+    background: linear-gradient(45deg, #1784eb, #ff3298 );
+  }
+  
+  
+  /*------------------------------------------------------------------
+  [ Alert validate ]*/
+  
+  .validate-input {
+    position: relative;
+  }
+  
+  .alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 3px;
+    padding: 4px 25px 5px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 12px;
+    pointer-events: none;
+  
+    font-family: Poppins-Regular;
+    color: #c80000;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+  
+    visibility: hidden;
+    opacity: 0;
+  
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  
+  .alert-validate::after {
+    content: "\f12a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 18px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 18px;
+  }
+  
+  .alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @media (max-width: 992px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ Responsive ]*/
+  
